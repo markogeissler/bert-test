@@ -12,13 +12,13 @@ def get_model():
 
 tokenizer,model = get_model()
 
-user_input = st.text_area('Nachricht')
+user_input = st.text_area('Nachricht des Agents')
 button = st.button("Auswerten")
 
 d = {
     
-  1:'Keine Nummer',
-  0:'Nummer'
+  1:'Nummer',
+  0:'Keine Nummer'
 }
 
 if user_input and button :
