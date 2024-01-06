@@ -5,7 +5,7 @@ import torch
 
 @st.cache(allow_output_mutation=True)
 def get_model():
-    tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
+    tokenizer = BertTokenizer.from_pretrained('bert-base-german-cased')
     model = BertForSequenceClassification.from_pretrained("younoger/YGBNumbersBert")
     return tokenizer,model
 
